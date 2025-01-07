@@ -1,9 +1,23 @@
 
+
+
+/* || GENERAL STYLE */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/*
+Reducing font-size to 62.5% is common practice as it sets 1rem = 10px.
+
+Rem represents the font size of the root element (AKA the configuration that automatically
+    applies to all text in the html and text injections from wagtail).
+By default, root font-size is 16px.
+
+Since root font sizes are different for different types of devices, using rem ensures that font size
+    is proportional to the device used.
+*/
 
 html {
     font-size: 62.5%;
@@ -16,6 +30,7 @@ html {
             margin: 0;
         }
 
+/* SITEWIDE */
 body {
     display: flex;
     flex-direction: column;
@@ -58,6 +73,9 @@ section.main-content {
     margin: auto;
 }
 
+
+
+/* ITEM_SPECIFIC */
 .signInButton {
     margin: auto;
     background-color: #FFC107;
@@ -135,4 +153,7 @@ footer > div > div > a {
     color: #888;     /* Optional: change color */
     padding-right: 5px;
 }
+
+
+
 
